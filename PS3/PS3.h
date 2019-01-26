@@ -37,10 +37,11 @@ class PS3
         */
         int ConData[7];
     
+        int *Get_PS3_Data(void);
+    
     public:
         PS3(PinName Tx, PinName Rx);
         void ReceiveData(void);
-        int *Get_PS3_Data(void);
 };
 
 #endif
